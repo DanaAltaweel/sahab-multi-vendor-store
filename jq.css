@@ -1,0 +1,29 @@
+div ,p ,span{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    color: rgb(27, 29, 30);
+
+}
+.all{
+    margin: 30px;
+    border: 2px solid black;
+}
+
+.special{
+    margin: 10px;
+    border: 2px solid black;
+}
+.s{
+    margin: 10px;
+    border: 2px solid black;
+}
+.last{
+    margin: 10px;
+    border: 2px solid black;
+
+}
+.b{
+    margin-top: 30px;
+    background-color: blueviolet;
+}

@@ -1,0 +1,598 @@
+body{
+    margin: 0;
+    background-color: #f3f3e6;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.left img{
+    width: 500px;
+    height: 470px;
+    margin-top: 10px;
+}
+
+.right{
+    width: 370px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 4px 6px 9px rgb(108, 105, 105);
+    background-color: white;
+}
+.right input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(91, 90, 90);
+    font-weight: bold;
+    font-size: 20px;
+}
+.right input:hover{
+    box-shadow: 4px 4px 6px rgb(186, 186, 235);
+}
+.right h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.right label, .right input{
+    display: block;
+}
+.right a{
+    text-decoration: none;
+}
+.right button{
+    width: 100%;
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(42, 97, 214);
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: none;
+}
+.right button:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 15px 9px rgb(147, 147, 198);
+}
+.right #q-verify{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(115, 109, 109);
+}
+.right #verify{
+    color: rgb(85, 82, 82);
+    padding-right: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+nav .nav-par{
+    display: flex;
+
+}
+nav .nav-par div{
+    margin-left: 18px;
+    text-align: center;
+    font-size: 18px;
+}
+nav .nav-par .btn4 button{
+    background-color: rgb(81, 231, 76);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    height: 60px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav .nav-par .btn2 button{
+    background-color: rgb(59, 114, 57);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 23px;
+    height: 40px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.discribtion{
+    box-shadow: rgb(216 176 142) 0px -4px;
+    padding: 32px 24px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-width: 0px 1px 1px;
+    border-color: rgb(205, 204, 204);
+    border-style: solid;
+    margin-top: 20px
+}
+.discribtion p{
+    font-size: 17px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.t{
+    margin-top: 20px;
+    box-shadow: rgb(255 208 7) 0px -4px;
+    border-radius: 8px;
+    border-width: 0px 1px 1px;
+    border-color: rgb(205, 204, 204);
+    border-style: solid;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.breadcrumb .breadcrumb-item{
+    margin-top: 10px;
+    margin-right: 0%;
+
+}
+.breadcrumb .breadcrumb-item a {
+    color: #868e96 ;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.breadcrumb .breadcrumb-item a:hover{
+    color: rgb(106, 18, 81);
+}
+.row .col .card{
+    box-shadow: 6px 8px 8px rgb(88, 85, 85);
+    margin-bottom: 40px;
+}
+.dropdown-menu  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+
+
+.header-line{
+    height: 7px;
+    margin-bottom: 25px;
+    background: -webkit-linear-gradient(left, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+}
+.background{
+    height: 400px;
+    margin-top: 10px;
+    background-image: url('./images/slider-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+
+.background .welcome{
+    background-color: white;
+    height: 320px;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    width: 300px;
+    
+}
+
+.background .welcome h3{
+    text-align: center;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.background .welcome p{
+    margin-top: 2px;
+    font-weight: bold;
+    color: #484840;
+text-align: center;}
+.background .welcome input ,.background  .welcome label{ 
+    display: block;
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.background .welcome input{
+    width: 95%;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #a4a9ae;
+    
+}
+.background .welcome input:hover{
+    box-shadow: 7px 4px 7px rgb(134, 134, 197);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.background .welcome label{
+    font-weight: bold;
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+.background .welcome button{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(148, 30, 199);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.background .welcome button:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 4px 8px rgb(191, 78, 214);
+}
+
+
+.background .welcome div{
+    margin-bottom: 20px;
+}
+.catigouris{
+    height: 300px;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #f3f3e6;
+
+}
+.catigouris .para{
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.catigouris h1{
+    padding-top: 10px;
+}
+.catigouris .items .item{
+    text-align: center;
+    margin-left: 40px;
+
+}
+.catigouris .items .item:hover{
+    transform: scale(1.2);
+}
+.catigouris .items .item p{
+    margin-top: 4px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.catigouris .items{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+
+}
+.catigouris .items .item img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgb(67, 64, 64);
+}
+.catigouris .items .item img:hover{
+    background-color: rgb(199, 200, 195);
+}
+.cards{
+    height: 400px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    background-color: #f3f3e6;
+}
+
+.cards .card{
+    background-color: white;
+    width: calc(100% /3);
+    margin-left: 20px;
+    border-radius: 14px;
+    border-bottom: #484840;
+    box-shadow: 4px 7px 10px rgb(143, 139, 139);
+}
+.cards .card img{
+    width: 100%;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+   
+}
+.cards .card h2{
+    text-align: center;
+    font-weight: bold;
+    font-family:fantasy;
+    color: #090909;
+    
+    
+    
+}
+.cards .card p{
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.move{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+   
+}
+.move img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.imag-3{
+    height: 440px;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    padding-top: 30px;
+}
+.imag-3 div{
+    background-color: white;
+    margin-left: 20px;
+    width: calc(100% /3);
+    border-radius: 15px;
+    box-shadow: 4px 7px 10px rgb(143, 139, 139);
+
+    
+}
+.imag-3 div img{
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+
+
+}
+.imag-3 div:hover{
+    transform: scale(1.2);
+}
+.imag-3 div h2{
+    text-align: center;
+    font-weight: bold;
+    font-family:fantasy;
+    color: #090909;
+    
+    
+    
+}
+.imag-3 div p{
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.image-3-2{
+    height: 300px;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    padding-top: 30px;
+}
+.image-3-2 div{
+    background-color: white;
+    margin-left: 20px;
+    width: calc(100% /3);
+    border-radius: 15px;
+    box-shadow: 4px 7px 10px rgb(143, 139, 139);
+
+    
+}
+.image-3-2 div img{
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+
+
+}
+.image-3-2 div h2{
+    text-align: center;
+    font-weight: bold;
+    font-family:fantasy;
+    color: #090909;
+    
+    
+    
+}
+
+
+.end-line{
+    margin-top: 20px;
+    height: 12px;
+    background: -webkit-linear-gradient(left, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+}
+.image-all{
+    padding-right: 100px;
+}
+.image-all img{
+    border-radius: 8px;
+}
+.short{
+    margin-top: 8px;
+}
+nav .short a{
+    text-decoration: none;
+    color: #3b3b39;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.section3{
+    width: 60%;
+    margin-top: 20px;
+    padding-right: 100px;
+}
+.section3 img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+.section4{
+    padding-right: 100px;
+    display: flex;
+    margin-bottom: 4px;
+}
+.section4 div:nth-child(2){
+    padding-right: 250px;
+    margin-top: 30px;
+  
+}
+.section4 div:nth-child(2) button{
+    font-size: 30px;
+    border-radius: 8px;
+    width: 180px;
+    text-align: center;
+}
+.section4 div:nth-child(2) button:hover{
+    box-shadow: 5px 7px 6px rgb(163, 199, 234);
+    transform: scale(1.2);
+}
+
+.section4 h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section5{
+    padding-right: 100px;
+    display: flex;
+}
+.section5 span{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2e2e2c;
+}
+.section5 div:nth-child(2){
+    padding-right:490px ;
+}
+.section5 div:nth-child(2) button{
+    font-size: 30px;
+    border-radius: 8px;
+    width: 180px;
+    text-align: center;
+
+}
+.section5 div:nth-child(2) button:hover{
+    box-shadow: 5px 7px 6px rgb(163, 199, 234);
+    transform: scale(1.2);
+}
+footer{
+    height: 400px;
+    padding-right: 100px;
+    padding-left: 100px;
+
+    background-color: white;
+}
+footer>div h1{
+    padding-top: 30px;
+    font-size: 40px;
+
+}
+footer {
+    display: flex;
+}
+footer address {
+    display: flex;
+}
+
+footer address div {
+    margin-left: 30px;
+}
+footer address div h5{
+    margin-bottom: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+footer address div p{
+    margin-top: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6c6c65;
+
+
+    
+}
+footer div:nth-child(1) h1{
+    margin-bottom: 2px;
+}
+footer div:nth-child(1) p{
+    margin-top: 2px;
+
+   
+}
+footer div:nth-child(1) #pppp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #6c6c65;
+}
+
+footer div:nth-child(2) a{
+    text-decoration: none;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #6c6c65;
+    margin-top: 2px;
+
+}
+footer div:nth-child(2) h1{
+    margin-bottom: 2px;
+}
+
+footer div:nth-child(3){
+    margin-right: 100px;
+}
+footer div:nth-child(3) a{
+    text-decoration: none;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #6c6c65;
+}
+footer div:nth-child(3) h1{
+    margin-bottom: 2px;
+    white-space: nowrap;
+}
+
+footer div:nth-child(4){
+    margin-right: 100px;
+}
+footer div:nth-child(4) h1{
+    margin-bottom: 2px;
+}
+footer div:nth-child(4) p{
+    margin-top: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #6c6c65;
+    
+}
+
+
+

@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header-line mb-0"></div>
+    <div class="container mt-0">
+        <nav class="navbar navbar-expand-md navbar-light mt-0  ">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="./images/rasel-logo.png" width="200px" height="60px" >
+              </a>
+              <div class="px-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-dark fw-bold " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       التصنيفات
+                      </a>
+                      <div class="dropdown-menu " aria-labelledby="navbarDropdown" style=" width: 500px;" >
+                          <div class="dropdown-item"  >
+                              <h6 class=" text-end" >الاثاث المنزلي</h6>
+                              <div class="row" style="white-space: nowrap; ">
+                                  <div class="col-4">فرشات نوم</div>
+                                  <div class="col-4">ملحقات</div>
+                                  <div class="col-4">فرش عربي</div>
+                                  <div class="col-4">طاولات </div>
+                                  <div class="col-4">أطقم كنب</div>
+                                  <div class="col-4">أطقم نوم</div>
+                              </div><br><br>
+        
+                              <h6 class=" text-end">الاجهزة الكهربائية</h6>
+                              <div class="row">
+                                  <div class="col-4">جوالات </div>
+                                  <div class="col-4">فروش غاز</div>
+                                  <div class="col-4">الثلاجات </div>
+                                  <div class="col-4">الغسالات </div>
+                                  <div class="col-4">شاشات التلفاز</div>
+                                  <div class="col-4">أفران </div>
+                                  <div class="col-4">خلاطات ومفارم </div>
+                                  <div class="col-4">دفايات  </div>
+                                  <div class="col-4">فريزر </div>
+                                  <div class="col-4">مكواة  </div>
+                                  <div class="col-4">مكنسة كهرباءية  </div>
+                                  <div class="col-4">شفاطات  </div>
+                                  <div class="col-4">كمكم  </div>
+                                  <div class="col-4">سخان المياه  </div>
+                                  <div class="col-4"> ملحقات  </div>
+        
+                              </div><br><br>
+                              <h6 class=" text-end">صالات الافراح </h6>
+                              <div class="row">
+                                  <div class="col-4">فرشات نوم</div>
+                                  <div class="col-4">ملحقات</div>
+                                  <div class="col-4">فرش عربي</div>
+                                  <div class="col-4">طاولات </div>
+                                  <div class="col-4">أطقم كنب</div>
+                                  <div class="col-4">أطقم نوم</div>
+                              </div><br>
+                              <h6 class=" text-end">الاثاث المنزلي</h6>
+                              <div class="row">
+                                  <div class="col-4">فرشات نوم</div>
+                                  <div class="col-4">ملحقات</div>
+                                  <div class="col-4">فرش عربي</div>
+                                  <div class="col-4">طاولات </div>
+                                  <div class="col-4">أطقم كنب</div>
+                                  <div class="col-4">أطقم نوم</div>
+                              </div><br>
+        
+                          </div>
+                      </div>
+                    </li>
+                  </ul> 
+              </div>
+               <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#x"> <span class="navbar-toggler-icon"></span></button>
+               <div style="float: left;">
+
+                <ul id="x" class="navbar-nav collapse navbar-collapse">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <button class="btn btn-success fw-bold" >
+                            <i class="fa-solid fa-circle-plus"></i>
+                                سجل كمورد</button>
+                    </a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link " href="#"> <i class="fa-solid fa-magnifying-glass"></i> 
+                        <p>االبحث</p></a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link " href="#"> <i class="fa-solid fa-heart"></i>
+                        <p>المفضلة</p></a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link " href="#"> <i class="fa-solid fa-store"></i>
+                        <p>سلة المشتريات</p></a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link " href="#"><i class="fa-regular fa-circle-user"></i>
+                        <p> تسجيل الدخول</p></a>
+                  </li>
+                </ul></div>
+              </div>
+            </div>
+
+        <div class="search-box bg-primary" style="height: 80px; padding: 15px;" >
+            <div class="container d-flex bg-light rounded">
+                <i class="fa-solid fa-magnifying-glass p-3"></i>
+                <input class="form-control bg-light border-0 p-2 " type="text" placeholder="البحث...">
+            </div>
+        </div>
+
+        <div class="catigouris mt-1 ">
+            <div class="container">
+                <div class="items d-flex overflow-scroll text-center fw-bold mt-4 w-100 ">
+                 <div class="item mx-3">
+                  <img src="./images/c0.png" class=" rounded-circle border-bottom " width="75" height="75" >
+                  <p>الأثاث المنزلي</p>
+                  </div>
+                  <div class="item mx-3">
+                    <img src="./images/c1.png " class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>الأجهزة الكهربائية</p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c2.png"  class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>صالة الأفراح </p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c3.png" class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>بدل الزفاف</p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c4.png"  class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>الكوافيرات</p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c5.png" class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>بطاقات الأفراح</p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c6.png" class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>تزيين الورود</p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c7.png"  class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>تأجير الباصات </p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c8.png" class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>أستوديوهات التصوير</p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c9.png" class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>المطابخ</p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c10.png"  class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>الفنادق </p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c11.png"  class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>فنون استعراضية </p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c12.png"  class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>المسارح</p>
+                </div>
+                <div class="item mx-3">
+                    <img src="./images/c13.png"  class=" rounded-circle border-bottom" width="75" height="75">
+                    <p>بدل رجالي</p>
+                </div>
+                <div class="item mx-3">
+                  <img src="./images/c15.png"   class=" rounded-circle border-bottom" width="75" height="75">
+                  <p>مفروشات </p>
+                 </div>
+                 <div class="item mx-3">
+                <img src="./images/c14.png"   class=" rounded-circle border-bottom" width="75" height="75">
+                <p>حلويات الأفراح </p>
+                 </div>
+                 <div class="item mx-3">
+                  <img src="./images/c16.png"  class=" rounded-circle border-bottom" width="75" height="75"> 
+                  <p>أدوات منزلية </p>
+                 </div>
+                 <div class="item mx-3">
+                  <img src="./images/c18.png" class=" rounded-circle border-bottom" width="75" height="75">
+                  <p>كل التصنيفات</p>
+                 </div>
+     
+            </div><hr class="mt-2">
+            <img src="./images/adv-search1.jpg" class="mt-2 w-100">
+        </div></div>
+
+        <div class="product mt-3 pb-5 bg-light">
+            <div class="container">
+                <div class="col-md-12">
+                   <div class="row">
+                    <div class="col-md-9">
+                        <div class="filters d-flex pt-3 ">
+                            <span class="mx-2">الترتيب حسب</span>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">الأقل سعرا</a></li>
+                                  <li><a class="dropdown-item" href="#"> الأعلى سعرا</a></li>
+                                  <li><a class="dropdown-item" href="#">الأكثر خصومات</a></li>
+                                  <li><a class="dropdown-item" href="#">الأحدث</a></li>
+                                  <li><a class="dropdown-item" href="#">الأقدم</a></li>
+                                </ul>
+                              </div>
+    
+                              <div class="filters-content ">
+                                <div class="filters-content-items d-flex">
+                                    <div class="filters-content-item d-flex mx-4">
+                                        <input class="form-control rounded fw-bold mx-2" type="text" placeholder="الأقل سعرا">
+                                        <span class="fw-bold">الى</span>
+                                        <input class="form-control rounded fw-bold mx-2" type="text" placeholder="الأعلى سعرا">
+                                    </div>
+                                    <div class="pe-0 fw-bold">4271 صنف</div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+    
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2">
+                                    <p  class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <img class="w-100 mt-3" src="./images/q.jpg" alt="">
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <div>
+                            <img class="w-100 mt-3 " src="./images/q11.jpg" alt="">
+                        </div>
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="y-items mt-3 border-bottom" style="background-color: white;">
+                            <div class="y-item d-flex p-4" >
+                              <div class="bg-light p-2"><a href="">
+                                <img class="mx-3" src="./images/v5.jpg" width="200" height="150">
+                               </a> </div> 
+                               <div class="y-details">
+                                 <div class=" d-flex">
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">صالة أفراح</a>
+                                 <span>-</span>
+                                 <a class="text-decoration-none text-muted fw-bold mx-2" href="">قاعة أفراح</a>
+                                 <span class="heart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-heart hart text-muted"></i></span>
+                                 </div>
+                                 <div class="d-flex my-2">
+                                    <a class="text-decoration-none text-muted mx-2 "><span class="text-dark fw-bold"> صالة اللوتس</span>
+                                        </a>
+                                    <a class="text-decoration-none text-muted  mx-2" href="">(صالة اللوتس للأفراح)</a>
+                                 </div>
+                                 <div class="my-2 mx-2 ">
+                                    <p class="text-secondary fw-bold">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>
+                                 </div>
+                                 <div class="mt-4 mx-3">
+                                    <span class="fw-bold pb-2 px-3 rounded">₪4605</span>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-3 pt-5 pb-3">
+                        <div class="all-items p-3 mt-3 border-bottom" style="background-color: white;">
+                            <div class="bg-light p-3">
+                                <a href="">
+                                    <img class=" mx-3 " src="./images/e1.jpg" width="170" height="140" >
+                                </a>
+                            </div>
+                            <div class="details px-2 py-2">
+                                <a class="text-decoration-none text-muted fw-bold " href="">طاولة وسط<span>-20026</span></a>
+                                <h6>₪1636 ₪1800
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="all-items p-3 mt-3 border-bottom" style="background-color: white;">
+                            <div class="bg-light p-3">
+                                <a href="">
+                                    <img class=" mx-3" src="./images/e2.jpg" width="170" height="140" >
+                                </a>
+                            </div>
+                            <div class="details px-2 py-2">
+                                <a class="text-decoration-none text-muted fw-bold " href="">طاولة وسط<span>-20016</span></a>
+                                <h6>₪1400
+    
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="all-items p-3 mt-3 border-bottom" style="background-color: white;">
+                            <div class="bg-light p-3">
+                                <a href="">
+                                    <img class=" mx-3" src="./images/e3.jpg" width="170" height="140" >
+                                </a>
+                            </div>
+                            <div class="details px-2 ">
+                                <a class="text-decoration-none text-muted px-2" href=""><span class="fw-bold">W</span>-507</a><br><br>
+                                <a  class="text-decoration-none text-muted px-2 fw-bold " href="">(سنتر أجمل العرايس)</a>
+                                <h6 class="px-2">₪750 ₪800</h6>
+                              
+                            </div>
+                        </div>
+                        <div class="all-items p-3 mt-3 border-bottom " style="background-color: white;">
+                            <div class="bg-light p-3">
+                                <a href="">
+                                    <img class=" mx-3" src="./images/e4.jpg" width="170" height="140" >
+                                </a>
+                            </div>
+                            <div class="details px-2 py-2">
+                                <a class="text-decoration-none text-muted fw-bold " href=""> فيديو سهرة الشباب</a><br><br>
+                                <a class="text-decoration-none text-muted fw-bold " href="">(استوديو غرام)</a><br>
+                                <h6>₪106 ₪110</h6>
+                            </div>
+                        </div>
+    
+                        <div class="mt-5 shadow-sm border-bottom " style="background-color: white;">
+                         <div   >
+                            <div class="d-flex p-2">
+                                <img src="./images/wwww.jpg" width="80" height="80">
+                                <div class="py-2 mx-2">
+                                <a class="text-decoration-none text-muted  " href="">₪8650</a><br>
+                                <a class="text-decoration-none text-muted  " href="">قاعة الرغد</a><br>
+                                <a class="text-decoration-none text-muted  " href="" style="white-space: nowrap;" 
+                                >(فندق فينيس السياحي)</a>
+                                </div>
+                            </div>
+                            <p>من شهر 4 إلى شهر 9، غزة، مكيَف، 350 كرسي، 20 طاولة
+                            </p><hr>
+                        </div>
+                        <div   >
+                            <div class="d-flex p-2">
+                                <img src="./images/xx.jpg" width="80" height="40">
+                                <div class="py-0 mx-2">
+                                <a class="text-decoration-none text-muted  " href="">₪8650</a><br>
+                                <a class="text-decoration-none text-muted  " href="">قاعة الرغد</a><br>
+                                <a class="text-decoration-none text-muted  " href="" style="white-space: nowrap;" 
+                                >(فندق فينيس السياحي)</a>
+                                </div>
+                            </div>
+                            <p>من شهر 4 إلى شهر 9، غزة، مكيَف، 350 كرسي، 20 طاولة
+                            </p><hr>
+                        </div>
+                        <div   >
+                            <div class="d-flex p-2">
+                                <img src="./images/xx.jpg" width="80" height="40">
+                                <div class="py-0 mx-2">
+                                <a class="text-decoration-none text-muted  " href="">₪8650</a><br>
+                                <a class="text-decoration-none text-muted  " href="">قاعة الرغد</a><br>
+                                <a class="text-decoration-none text-muted  " href="" style="white-space: nowrap;" 
+                                >(فندق فينيس السياحي)</a>
+                                </div>
+                            </div>
+                            <p>من شهر 4 إلى شهر 9، غزة، مكيَف، 350 كرسي، 20 طاولة
+                            </p><hr>
+                        </div>
+                        <div>
+                            <div class="d-flex p-2">
+                                <img src="./images/xx.jpg" width="80" height="40">
+                                <div class="py-0 mx-2">
+                                <a class="text-decoration-none text-muted  " href="">₪8650</a><br>
+                                <a class="text-decoration-none text-muted  " href="">قاعة الرغد</a><br>
+                                <a class="text-decoration-none text-muted  " href="" style="white-space: nowrap;" 
+                                >(فندق فينيس السياحي)</a>
+                                </div>
+                            </div>
+                            <p>من شهر 4 إلى شهر 9، غزة، مكيَف، 350 كرسي، 20 طاولة
+                            </p>
+                        </div>
+                        </div>
+                        <div>
+                            <img class="mt-5 w-100" src="./images/dddd.jpg"  >
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <img class="d-none d-md-block w-100" src="./images/call-center.jpg" >
+            <img class="d-block d-md-none w-100" src="./images/call222.jfif" >
+
+        </div>
+        </div>
+        <div class="end-line"></div>
+        <div class="mt-3 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-6 ">
+                        <div>
+                            <h3>للاتصال بنا</h3>
+                            <h6>يسرنا تواصلك معنا من خلال أي من القنوات المتاحة.</h6>
+                        </div>
+                        <address class="d-flex pt-4 ">
+                            <div>
+                                <dl>
+                                    <dt>أرقام التواصل</dt>
+                                    <dd class="mx-1 fw-bold text-secondary">1700400600</dd>
+                                </dl>
+                                <dl>
+                                    <dt>العنوان</dt>
+                                    <dd class="mx-0 fw-bold text-secondary">فلسطين، غزة، مقابل<br> البوابة الشمالية لجامعة الأزهر،<br> مجمع الرؤيا التجاري</dd>
+                                </dl>
+                            </div>
+                            <div class="mx-5" >
+                                <dl>
+                                    <dt>البريد الإلكتروني</dt>
+                                    <dd class="mx-1 fw-bold text-secondary">info@accord.ps</dd>
+                                </dl>
+                                
+                                <dl>
+                                    <dt>ساعات العمل</dt>
+                                    <dd class="mx-1 fw-bold text-secondary">السبت-الخميس<br>9:00 صباحا-3:00 مساءا</dd>
+                                </dl>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-2">
+                        <div class="d-block ">
+                            <h3>المعلومات</h3>
+                            <ul class="list-unstyled px-2">
+                                <li  ><a class="text-decoration-none text-muted fw-bold" href="">من نحن؟</a></li>
+                                <li><a class="text-decoration-none text-muted fw-bold" href="">سياسة الخصوصية</a></li>
+                                <li><a class="text-decoration-none text-muted fw-bold" href="">للاتصال بنا</a></li>
+                                <li><a class="text-decoration-none text-muted fw-bold" href="">الأسئلة الشائعة</a></li>
+                                <li><a class="text-decoration-none text-muted fw-bold" href="">مورد جديد</a></li>
+    
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-2 ">
+                        <div>
+                            <h3  style="white-space: nowrap;">الملف الشخصي</h3>
+                            <ul class="list-unstyled px-2">
+                                <li  ><a class="text-decoration-none text-muted fw-bold" href="">التسجيل</a></li>
+                                <li><a class="text-decoration-none text-muted fw-bold" href="">تسجيل الدخول</a></li>
+                                <li><a class="text-decoration-none text-muted fw-bold" href="">المفضلة</a></li>
+                                <li><a class="text-decoration-none text-muted fw-bold" href="">سلة المشتريات</a></li>
+                                <li><a class="text-decoration-none text-muted fw-bold" href="">البحث</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class=" mt-0">
+                            <h3>قائمة الواتس اب</h3>
+                        <h6 class="text-secondary " style="white-space: nowrap;">انضم إلى قائمة الواتس أب الخاصة بالمنصة للبقاء على <br>إطلاع بأحدث الخصومات والعروض الخاصة.</h6>
+                        <div class="d-flex mt-4">
+                            <input class="form-control fw-bold border-dark mx-2 text-secondary w-100" type="text " placeholder="رقم الواتس اب...">
+                        <button class="btn text-light fw-bold " style="background: #7e57c6;">الاشتراك</button>
+                        </div>
+                        <h6 class="fw-bold text-dark mt-4">وسائل التواصل الاجتماعي</h6>
+                        <div class="mt-2 fs-4">
+                            <a class="text-muted" href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a class="text-muted" href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="text-center fw-bold text-secondary ">
+                    <h5>Powered by Accord - Accord Group for Marketing & Trade</h5>
+                </div>
+            </div>
+            
+        </div> 
+        <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-secondary fw-bold" id="exampleModalLabel" >أهلا وسهلا بك في أكورد</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fw-bold text-secondary">
+           <h6>يجب عليك تسجيل الدخول أولاً أو التسجيل في موقع أكورد</h6>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success text-light fw-bold" data-bs-dismiss="modal">تسجيل الدخول</button>
+          <button type="button" class="btn btn-success text-light fw-bold">تسجيل</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+
+ 
+
+
+           
+            
+    
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
